@@ -17,7 +17,7 @@ b4_posy = 0
 size = ['normal']
 # You can change this sizes
 normal_size = 24
-bigger = 150
+bigger = 72
 
 def increase():
     os.system(f"xfconf-query --channel xsettings --property /Gtk/CursorThemeSize --set {bigger}")
