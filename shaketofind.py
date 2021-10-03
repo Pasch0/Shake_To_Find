@@ -15,10 +15,12 @@ b4_posy = 0
 
 # Define cursor size
 size = ['normal']
+# You can change this sizes
 normal_size = 24
+bigger = 150
 
 def increase():
-    os.system(f"xfconf-query --channel xsettings --property /Gtk/CursorThemeSize --set 120")
+    os.system(f"xfconf-query --channel xsettings --property /Gtk/CursorThemeSize --set {bigger}")
 
 def decrease():
     os.system(f"xfconf-query --channel xsettings --property /Gtk/CursorThemeSize --set {normal_size}")
@@ -43,8 +45,8 @@ while True:
     else:
         if x_avg < 130:
             if size[0] == 'big':
-                sleep(1)
+                sleep(0.5)
                 decrease()
                 size[0] = 'normal'
-                sleep(1)
+                sleep(0.5)
     sleep(0.03)
