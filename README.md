@@ -27,6 +27,9 @@ You can just run or configure to start with your system
 shaketofind
 ```
 
+## Disclaimer
+Some aplications read cursor state at start and don't apply changes after this. So, this function will work fine in most apps, but some apps like xterm, vscode or electron based will not apply increases or deacreses of cursor size. If you press Ctrl+Alt+T when your cursor increases, only in your terminal the cursor will be always big. It's not a script bug, it's a limitation of this aplication.
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
